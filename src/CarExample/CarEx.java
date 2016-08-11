@@ -8,7 +8,7 @@ public class CarEx {
 	static Scanner sc = new Scanner(System.in);
 	static Car c = new Car("Audi", "A4", 10);
 	static Car c1 = new Car("VW", "Passat", 1);
-	static Person p0 = new Person("John", "Sligo", true, false, true, false, true, false, c);
+	static Person p0 = new Person("John", "Sligo", true, true, true, false, true, false, c);
 	static Person p1 = new Person("Pat", "Athlone", false, false, false, false, false, false, c1);
 	static Person p2 = new Person("Joe", "Dublin", false, true, false, false, true, false, c1);
 
@@ -24,7 +24,7 @@ public class CarEx {
 		int count = 1;
 		for (Person p : person) {
 			System.out.println("===== Person " + count + " =====");
-			System.out.println(p.getName() + " from " + p.getAddress() + " drives an " + p.getCar().getCarModel() + " "
+			System.out.println(p.getName() + " from " + p.getAddress() + " drives a " + p.getCar().getCarModel() + " "
 					+ p.getCar().getCarType());
 			p.calculatePenaltyPoints();
 			System.out.println("Has " + p.getTotalPenaltyPoints() + " Penalty points");
